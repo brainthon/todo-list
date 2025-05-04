@@ -4,7 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/todo-list' : '',
+  basePath: '/todo-list',
+  assetPrefix: '/todo-list/',
+  trailingSlash: true,
 }
 
-module.exports = nextConfig 
+module.exports = nextConfig
